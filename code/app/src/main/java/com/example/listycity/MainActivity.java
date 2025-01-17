@@ -58,7 +58,10 @@ public class MainActivity extends AppCompatActivity {
         cityList.setAdapter(cityAdapter);
 
         Button button = findViewById(R.id.add_button);
-        // https://www.geeksforgeeks.org/how-to-dynamically-add-elements-to-a-listview-in-android/  --> Used to learn how to use buttons to add to a listview
+        /* The following use of setOnClickListener is taken from https://www.geeksforgeeks.org/how-to-dynamically-add-elements-to-a-listview-in-android/
+         * Authored by: GeeksforGeeks, 20 Jul, 2022
+         * Taken on: January 16, 2025
+         */
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
