@@ -3,16 +3,11 @@
 
 ## Student Details
 
-- **Full Name:** `<Enter name>`
-- **CCID:** `<Enter ccid>`
+- **Full Name:** Jachelle Chan
+- **CCID:** jachelle
 
 ## References and Resources
-
-List any resources used here, or simply put `N/A` if not applicable.
+https://www.geeksforgeeks.org/how-to-dynamically-add-elements-to-a-listview-in-android/  --> Used to learn how to use buttons to add to a listview
 
 ## Verbal Collaboration
-
-| Student Name | CCID      |
-| ------------ | --------- |
-| `student`    | `student` |
-| `<Add more>` | `<CCID>`  |
+N/A
