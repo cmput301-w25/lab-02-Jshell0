@@ -1,3 +1,11 @@
+/*
+ * This is a city listing app where a user can add or delete a city from a list.
+ *
+ * Class: CMPUT 301 - LEC B1 - LAB H03
+ * Author: Jachelle Chan
+ * Date: January 16, 2025
+ */
+
 package com.example.listycity;
 
 import android.os.Bundle;
@@ -55,8 +63,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String user_input = edit.getText().toString();
+                // check if the user entered something, if not then don't add empty city
                 if (!user_input.isEmpty()) {
                     dataList.add(user_input);
+                    // clear the input so the user can enter more cities without having to press backspace
+                    edit.setText("");
                     // notify tells the adapter that something changed, and will display the new change
                     cityAdapter.notifyDataSetChanged();
                 }
@@ -67,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             // if the user clicks on a city, the app will delete that city
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                // remove the item selected
                 dataList.remove(i);
                 cityAdapter.notifyDataSetChanged();
             }
